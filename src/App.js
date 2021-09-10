@@ -13,7 +13,9 @@ function App() {
     const div1 = document.querySelector('#div')
     let elemt = document.createElement('div')
     let check = document.createElement('input')
+    // check.id = 'checkbox'
     check.type = 'checkbox'
+    check.props.id = 'check'
     elemt.innerHTML = task.input.value
     elemt.appendChild(check)
 
@@ -27,18 +29,18 @@ function App() {
 
   return (
     <div style={{ 
-      backgroundColor: "blue", 
+      backgroundColor: "lightblue", 
       display: 'felx',
       width: '100%',
       alignContent: 'center',
       justifyContent: 'center'
       }} >
       <header>
-        <h1>⚛️🔥💬</h1>
+        <h1>⚛️🔥💬 Your ToDoList:</h1>
 
       </header>
 
-      <ul id='div' style={{ backgroundColor: 'darkcyan',overflowY: 'scroll', scrollbar: 'None' }}>
+      <ul id='div' style={{ overflowY: 'hidden'}}>
       </ul>
       
       <form onSubmit={Addtodo}>
