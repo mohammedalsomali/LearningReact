@@ -1,8 +1,32 @@
 a {
-    color: black;
-    font-family: cursive;
+    color: rgb(16, 145, 138);
+    font-family: cursive; 
     font-size: larger;
 }
 
 
 
+input[type=text] {
+    width: 80%;
+    border: 2px solid red;
+    border-radius: 4px;
+  }
+
+button {
+    background-color: #003cff; /* Green */
+    border: none;
+    color: white;
+    height: 20px;
+    width: 15%;
+    /* padding: 15px 32px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    /* font-size: 16px; */
+  }
+
+.btn {
+    width: auto;
+    margin-left: 35%;
+    
+}

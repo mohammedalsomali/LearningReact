@@ -1,6 +1,8 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { v4 as uuidv4 } from 'uuid'
+
 
 
 
@@ -27,6 +29,10 @@ function App() {
     div1.appendChild(elemt)
     task.input.value = ''
     e.preventDefault()
+    console.log(uuidv4())
+    let key = uuidv4()
+    localStorage.setItem(key, div1)
+
 
 
   }
@@ -55,18 +61,23 @@ function App() {
         <h1>⚛️🔥💬 Your ToDoList:</h1>
 
       </header>
-      <form onSubmit={Addtodo}>
+      <form 
+        onSubmit={Addtodo}
+        style={{
+          alignContent: 'center',
+          justifyContent: 'center'
+        }}>
 
         <input type='text' id='input' />
 
         <button type='submit' > send </button>
       </form>
-      <button onClick={Clearchecked} > Clearchecked </button>
 
 
       <ul id='div' style={{ overflowY: 'hidden'}}>
       </ul>
       
+      <button className='btn' onClick={Clearchecked} > Clearchecked </button>
       
 
     </div>
