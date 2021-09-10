@@ -26,13 +26,19 @@ function App() {
 
 
   return (
-    <div style={{ backgroundColor: "red", height: '500px', width: '350px'}} >
+    <div style={{ 
+      backgroundColor: "blue", 
+      display: 'felx',
+      width: '100%',
+      alignContent: 'center',
+      justifyContent: 'center'
+      }} >
       <header>
         <h1>⚛️🔥💬</h1>
 
       </header>
 
-      <ul id='div' style={{ width: '88.5%', height: '70%', backgroundColor: 'darkcyan',overflowY: 'scroll', scrollbar: 'None' }}>
+      <ul id='div' style={{ backgroundColor: 'darkcyan',overflowY: 'scroll', scrollbar: 'None' }}>
       </ul>
       
       <form onSubmit={Addtodo}>
