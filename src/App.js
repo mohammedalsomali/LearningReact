@@ -13,17 +13,33 @@ function App() {
     const div1 = document.querySelector('#div')
     let elemt = document.createElement('div')
     let check = document.createElement('input')
-    // check.id = 'checkbox'
+    let tex = document.createElement('a')
+    check.id = 'checkbox'
     check.type = 'checkbox'
-    check.props.id = 'check'
-    elemt.innerHTML = task.input.value
     elemt.appendChild(check)
+
+    // check.style.float = 'right'
+    tex.innerText = task.input.value
+    elemt.appendChild(tex)
+
+    
 
     div1.appendChild(elemt)
     task.input.value = ''
     e.preventDefault()
 
 
+  }
+
+  function Clearchecked() {
+    const state = document.querySelectorAll('#checkbox')
+
+    for (var i = 0; i < state.length; i++) {
+      if (state[i].checked === true){
+        state[i].parentElement.remove()
+      }
+
+    }
   }
 
 
@@ -39,16 +55,19 @@ function App() {
         <h1>⚛️🔥💬 Your ToDoList:</h1>
 
       </header>
-
-      <ul id='div' style={{ overflowY: 'hidden'}}>
-      </ul>
-      
       <form onSubmit={Addtodo}>
 
         <input type='text' id='input' />
 
         <button type='submit' > send </button>
       </form>
+      <button onClick={Clearchecked} > Clearchecked </button>
+
+
+      <ul id='div' style={{ overflowY: 'hidden'}}>
+      </ul>
+      
+      
 
     </div>
   );
