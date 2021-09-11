@@ -28,8 +28,9 @@ input[type=text] {
   }
 
 .btn {
-    width: auto;
-    margin-left: 45%;
+  border: 2px solid blueviolet;
+  width: auto;
+  margin-left: 45%;
     
 }
 
