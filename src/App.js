@@ -18,14 +18,16 @@ function App() {
     }
 
     const div1 = document.querySelector('#div')
+    div1.classList = 'newdiv'
     let elemt = document.createElement('div')
-    let check = document.createElement('button')
+    let check = document.createElement('input')
     let tex = document.createElement('a')
-    // check.id = 'checkbox'
-    // check.type = 'checkbox'
+    check.id = 'checkbox'
+    check.type = 'checkbox'
     let icon = document.createElement('label')
     icon.className = 'icon check'
     check.appendChild(icon)
+    
     elemt.appendChild(check)
 
     // check.style.float = 'right'
@@ -81,8 +83,8 @@ function App() {
       <form 
         onSubmit={Addtodo}
         style={{
-          alignContent: 'center',
-          justifyContent: 'center'
+          // alignContent: 'center',
+          // justifyContent: 'center'
         }}>
 
         <input type='text' id='input' />

@@ -13,7 +13,7 @@ input[type=text] {
     height: 30px;
   }
 
-.ui labeled icon button fluid {
+.btnui {
     background-color: #003cff; /* Green */
     border: none;
     color: white;
@@ -38,6 +38,14 @@ input[type=text] {
   height: 100%;
 }
 
+.newdiv {
+  background-color: aliceblue;
+  border: 10px;
+  border-radius: 5px;
+  justify-content: center;
+}
 
 
-
+input[type=checkbox] {
+  border-left: 10px;
+}
