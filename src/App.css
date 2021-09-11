@@ -10,24 +10,26 @@ input[type=text] {
     width: 80%;
     border: 2px solid blueviolet;
     border-radius: 4px;
+    height: 30px;
   }
 
-button {
+.ui labeled icon button fluid {
     background-color: #003cff; /* Green */
     border: none;
     color: white;
-    height: 20px;
+    height: 38px;
     width: 19%;
     /* padding: 15px 32px; */
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    /* font-size: 16px; */
+    border: 2px solid blueviolet;
+    border-radius: 4px;
   }
 
 .btn {
     width: auto;
-    margin-left: 35%;
+    margin-left: 45%;
     
 }
 
@@ -35,3 +37,7 @@ button {
 #root {
   height: 100%;
 }
+
+
+
+

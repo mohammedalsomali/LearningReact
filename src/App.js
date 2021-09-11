@@ -19,11 +19,11 @@ function App() {
 
     const div1 = document.querySelector('#div')
     let elemt = document.createElement('div')
-    let check = document.createElement('input')
+    let check = document.createElement('button')
     let tex = document.createElement('a')
-    check.id = 'checkbox'
-    check.type = 'checkbox'
-    let icon = document.createElement('li')
+    // check.id = 'checkbox'
+    // check.type = 'checkbox'
+    let icon = document.createElement('label')
     icon.className = 'icon check'
     check.appendChild(icon)
     elemt.appendChild(check)
@@ -87,12 +87,12 @@ function App() {
 
         <input type='text' id='input' />
 
-        <button type='submit' className='ui labeled icon button fluid' > send </button>
+        <button type='submit' className='btnui' > send </button>
       </form>
 
 
-      <ul id='div' style={{ overflowY: 'hidden'}}>
-      </ul>
+      <div id='div' style={{ overflowY: 'hidden'}}>
+      </div>
       
       <button className='btn' onClick={Clearchecked} >  Clearchecked </button>
       
