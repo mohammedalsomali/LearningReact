@@ -23,6 +23,9 @@ function App() {
     let tex = document.createElement('a')
     check.id = 'checkbox'
     check.type = 'checkbox'
+    let icon = document.createElement('li')
+    icon.className = 'icon check'
+    check.appendChild(icon)
     elemt.appendChild(check)
 
     // check.style.float = 'right'
@@ -61,18 +64,20 @@ function App() {
 
   return (
     <div style={{ 
-      backgroundColor: "white", 
+      // backgroundColor: "white", 
       display: 'felx',
       width: '100%',
-      borderColor: 'lightblue',
-      borderStyle: 'solid',
-      alignContent: 'center',
-      justifyContent: 'center'
+      // height: '100%',
+      // borderColor: 'lightblue',
+      // borderStyle: 'solid'
+      // alignContent: 'center',
+      // justifyContent: 'center'
       }} >
-      <header style={{backgroundColor: 'lightblue'}}>
-        <h1 >⚛️🔥💬 Your ToDoList:</h1>
+      <header style={{border: '0%', margin: '0%'}}>
 
       </header>
+      <div style={{ fontSize: 'larger', fontFamily: 'fantasy'}}>⚛️ 🔥 💬 Your ToDo List:</div>
+
       <form 
         onSubmit={Addtodo}
         style={{
@@ -82,14 +87,14 @@ function App() {
 
         <input type='text' id='input' />
 
-        <button type='submit' > send </button>
+        <button type='submit' className='ui labeled icon button fluid' > send </button>
       </form>
 
 
       <ul id='div' style={{ overflowY: 'hidden'}}>
       </ul>
       
-      <button className='btn' onClick={Clearchecked} > Clearchecked </button>
+      <button className='btn' onClick={Clearchecked} >  Clearchecked </button>
       
 
     </div>
