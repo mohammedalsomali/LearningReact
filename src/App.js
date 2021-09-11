@@ -12,6 +12,11 @@ import { v4 as uuidv4 } from 'uuid'
 function App() {
   function Addtodo(e) {
     const task = e.target.elements
+    if (task.input.value === '') {
+      e.preventDefault()
+      return
+    }
+
     const div1 = document.querySelector('#div')
     let elemt = document.createElement('div')
     let check = document.createElement('input')
@@ -24,17 +29,22 @@ function App() {
     tex.innerText = task.input.value
     elemt.appendChild(tex)
 
-    
+
 
     div1.appendChild(elemt)
     task.input.value = ''
-    e.preventDefault()
     console.log(uuidv4())
     let key = uuidv4()
-    localStorage.setItem(key, div1)
+    localStorage.setItem(key, div1.innerHTML)
+
+    e.preventDefault()
 
 
+  }
 
+
+  function storage(){
+    
   }
 
   function Clearchecked() {
@@ -51,14 +61,16 @@ function App() {
 
   return (
     <div style={{ 
-      backgroundColor: "lightblue", 
+      backgroundColor: "white", 
       display: 'felx',
       width: '100%',
+      borderColor: 'lightblue',
+      borderStyle: 'solid',
       alignContent: 'center',
       justifyContent: 'center'
       }} >
-      <header>
-        <h1>⚛️🔥💬 Your ToDoList:</h1>
+      <header style={{backgroundColor: 'lightblue'}}>
+        <h1 >⚛️🔥💬 Your ToDoList:</h1>
 
       </header>
       <form 
