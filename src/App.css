@@ -1,8 +1,10 @@
 a {
-    color: rgb(16, 145, 138);
+    color: rgb(255, 255, 255);
     font-family: cursive; 
     font-size: larger;
 }
+
+
 
 from {
   justify-content: center;
@@ -34,7 +36,7 @@ input[type=text] {
     border-radius: 4px;
   }
 
-.btn {
+/* .btn {
   border: 2px solid blueviolet;
   background-color: #003cff;
   width: auto;
@@ -42,7 +44,7 @@ input[type=text] {
   color: white;
 height: 30px;
     
-}
+} */
 
 
 #root {
@@ -64,4 +66,21 @@ input[type=checkbox] {
   border-left: 10px;
   float: right;
   margin: 5px;
+}
+
+
+
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.divchild1{
+  font-size: 0%;
+}
+
+
+.divchild2 {
+  font-size: 0;
 }
