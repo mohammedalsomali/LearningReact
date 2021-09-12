@@ -2,6 +2,9 @@ a {
     color: rgb(255, 255, 255);
     font-family: cursive; 
     font-size: larger;
+    overflow-wrap: break-word;
+    max-width: boxwidth;
+    
 }
 
 
@@ -28,23 +31,14 @@ input[type=text] {
     color: white;
     height: 30px;
     width: 20%;
-    /* padding: 15px 32px; */
     text-align: center;
     text-decoration: none;
     display: inline-block;
     border: 2px solid blueviolet;
     border-radius: 4px;
+    overflow: hidden;
   }
 
-/* .btn {
-  border: 2px solid blueviolet;
-  background-color: #003cff;
-  width: auto;
-  margin-left: 45%;
-  color: white;
-height: 30px;
-    
-} */
 
 
 #root {
@@ -76,11 +70,3 @@ input[type=checkbox] {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.divchild1{
-  font-size: 0%;
-}
-
-
-.divchild2 {
-  font-size: 0;
-}

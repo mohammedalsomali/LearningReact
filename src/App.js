@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
-import ReactDOM from 'react-dom';
-import { v4 as uuidv4 } from 'uuid'
+// import ReactDOM from 'react-dom';
+// import { v4 as uuidv4 } from 'uuid'
 
 
 
@@ -74,23 +74,24 @@ function App() {
     elemt.appendChild(check)
     elemt.appendChild(check1)
 
-    // check.style.float = 'right'
     tex.innerText = task.input.value
     elemt.appendChild(tex)
 
 
     div1.appendChild(elemt)
-    // divparent.appendChild(div2)
-
-    // div2.style.backgroundColor = 'green'
+    
     task.input.value = ''
-    // let key = uuidv4()
-    // localStorage.setItem(key, div1.innerHTML)
+    
     
     e.preventDefault()
 
 
   }
+
+
+  const paren = document.querySelector('.parentdiv')
+
+  
 
 
 
@@ -103,15 +104,10 @@ function App() {
 
   return (
     <div className='parentdiv' style={{ 
-      // backgroundColor: "white", 
       display: 'felx',
       width: '100%',
       overflowY: 'hidden'
-      // height: '100%',
-      // borderColor: 'lightblue',
-      // borderStyle: 'solid'
-      // alignContent: 'center',
-      // justifyContent: 'center'
+      
       }} >
       <header style={{border: '0%', margin: '0%'}}>
 
@@ -125,12 +121,7 @@ function App() {
       >⚛️ 🔥 💬 Your ToDo List:</div>
 
       <form 
-        onSubmit={Addtodo}
-        // style={{
-        //   alignContent: 'center',
-        //   justifyContent: 'center'
-        // }}
-        >
+        onSubmit={Addtodo}>
 
         <input type='text' id='input' />
 
@@ -141,7 +132,6 @@ function App() {
       <div id='div' style={{ overflowY: 'hidden'}}>
       </div>
       
-      {/* <button className='btn' onClick={Clearchecked} >  Clearchecked </button> */}
       <div className='parent'>
         <div className='childdiv1'> <a className='child1' style={{color: 'green', visibility: 'hidden'}}> Compleated Tasks:</a>
         </div>
