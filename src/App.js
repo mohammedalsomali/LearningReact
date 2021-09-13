@@ -10,6 +10,14 @@ import React, { useState, useEffect } from 'react';
 
 
 function App() {
+
+  // const [setitem, setnewitem] = useState([
+  //   {parent: document.getElementsByClassName('parentdiv')},
+  //   {child2: document.getElementsByClassName('childdiv1')},
+  //   {child2: document.getElementsByClassName('childdiv2')}
+  // ])
+
+
   function Addtodo(e) {
     const task = e.target.elements
     if (task.input.value === '') {
@@ -80,6 +88,7 @@ function App() {
 
     div1.appendChild(elemt)
     
+    
     task.input.value = ''
     
     
@@ -131,11 +140,15 @@ function App() {
 
       <div id='div' style={{ overflowY: 'hidden'}}>
       </div>
+        {/* {setitem.parent} */}
       
       <div className='parent'>
         <div className='childdiv1'> <a className='child1' style={{color: 'green', visibility: 'hidden'}}> Compleated Tasks:</a>
+        {/* {setitem.child1} */}
         </div>
-        <div className='childdiv2'> <a className='child2' style={{color: 'red', visibility: 'hidden'}}>   Deleated Tasks </a>
+        <div className='childdiv2'> <a className='child2' style={{color: 'red', visibility: 'hidden'}}>   Deleated Tasks: </a>
+        {/* {setitem.child2} */}
+       
         </div>
       </div>
 
