@@ -49,6 +49,8 @@ function App() {
     check.addEventListener('change', () => {
       if (check.checked === true){
         check1.checked = false
+        check.parentElement.style.visibility = 'hidden'
+        check1.parentElement.style.visibility = 'visible'
 
         var check2 = check.parentElement.parentElement
         check2.style.backgroundColor = 'red'
@@ -70,6 +72,8 @@ function App() {
     check1.addEventListener('change', () => {
       if (check1.checked === true){
         check.checked = false
+        check1.parentElement.style.visibility = 'hidden'
+        check.parentElement.style.visibility = 'visible'
         var check2 = check1.parentElement.parentElement
         check2.style.backgroundColor = 'green'
         check1.parentElement.parentElement.remove()
