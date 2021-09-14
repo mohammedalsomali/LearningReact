@@ -51,7 +51,7 @@ input[type=text] {
   border-radius: 5px;
   border-style: solid;
   padding: 2%;
-  align-items: center;
+  align-items: center; 
   justify-content: center;
 }
 
@@ -70,3 +70,25 @@ input[type=checkbox] {
   grid-template-columns: repeat(2, 1fr);
 }
 
+
+#removebox {
+  display: none;
+}
+
+
+#removebox:checked {
+  display: none;
+}
+
+#checkbox {
+  display: none;
+}
+
+
+#checkbox:checked {
+  display: none;
+}
+
+i {
+  float: right;
+}
