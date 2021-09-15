@@ -3,7 +3,7 @@ a {
     font-family: cursive; 
     font-size: larger;
     overflow-wrap: break-word;
-    max-width: boxwidth;
+    /* max-width: boxwidth; */
     
 }
 
